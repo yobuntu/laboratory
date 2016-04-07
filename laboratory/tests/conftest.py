@@ -2,7 +2,7 @@ import pytest
 import factory
 from pytest_factoryboy import register
 from factory.alchemy import SQLAlchemyModelFactory
-from foobar.fooflask import configure_app, configure_db, Personne, bind_db_to_app
+from laboratory.fooflask import configure_app, configure_db, Personne, bind_db_to_app
 from sqlalchemy.orm import sessionmaker
 
 
