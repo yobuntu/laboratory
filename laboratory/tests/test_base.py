@@ -38,3 +38,12 @@ def test_rollback_after_multiple_add(client):
     assert 'moi' in response.data.decode('utf-8')
     assert 'test0' not in response.data.decode('utf-8')
     assert 'test1' not in response.data.decode('utf-8')
+
+
+def test_dumb(client):
+    r = client.get(url_for('test'))
+    r = client.get(url_for('test'))
+    r = client.get(url_for('test'))
+    r = client.get(url_for('test'))
+
+
